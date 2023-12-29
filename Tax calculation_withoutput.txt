@@ -1,0 +1,14 @@
+#Tax calculation
+
+
+PS C:\Users\97450>
+PS C:\Users\97450> $NET = 35000
+PS C:\Users\97450> $VAT = 0.23
+PS C:\Users\97450> $VATAMOUNT = $amount * $VAT
+PS C:\Users\97450> $GROSS = $NET + $VATAMOUNT
+PS C:\Users\97450> $text = "The total €$GROSS is the sum of the net value €$amount with the VAT amount €$VATAMOUNT at $VAT% VAT rate"
+
+# output 
+PS C:\Users\97450> $text
+The total €35000 is the sum of the net value € with the VAT amount € at 0.23% VAT rate
+PS C:\Users\97450>

@@ -1,0 +1,61 @@
+#Types
+
+
+
+
+PS C:\Users\97450> $MyArray = 1,2,3,4,5
+PS C:\Users\97450> $MyArray[1]
+
+
+# OutPut
+2
+
+
+#Input 
+PS C:\Users\97450> $LittleNumber = 12345
+PS C:\Users\97450> $LittleNumber.GetType()
+
+
+#Output
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Int32                                    System.ValueType
+
+
+PS C:\Users\97450> $BigNumber = 123456789123456789
+PS C:\Users\97450> $BigNumber.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Int64                                    System.ValueType
+
+
+
+PS C:\Users\97450> [float]$Floaty32 = 12.12
+PS C:\Users\97450> $Floaty32.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Single                                   System.ValueType
+
+
+PS C:\Users\97450> [double]$Floaty64 = 12345.1234
+PS C:\Users\97450> $Floaty64.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Double                                   System.ValueType
+
+
+
+
+PS C:\Users\97450>  $StringValue = "Yoo hoo!"
+PS C:\Users\97450> $StringValue.ToUpper()
+YOO HOO!
+PS C:\Users\97450> $StringValue.ToLower()
+
+
+#Output
+yoo hoo!
+PS C:\Users\97450>

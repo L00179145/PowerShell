@@ -1,0 +1,23 @@
+#Below is the code function for Module
+
+PS C:\Windows\System32> $MyModulePath = "C:\Users\$env:USERNAME\Documents\PowerShell\Modules\HelloWorld"
+PS C:\Windows\System32>
+PS C:\Windows\System32> $MyModule = @"
+>> # HelloWorld.PSM1
+>> Function Get-HelloWorld {
+>>  "Hello World from Emmanuel"
+>> }
+>> "@
+PS C:\Windows\System32>
+PS C:\Windows\System32> New-Item -Path $MyModulePath -ItemType Directory -Force | Out-Null
+PS C:\Windows\System32> $MyModule | Out-File -FilePath $MyModulePath\HelloWorld.PSM1
+
+
+
+#output
+
+
+When the above commands were runned filename 'C:\Users\97450\Documents\PowerShell\Modules\HelloWorld\HelloWorld.PSM1' was created in my directory 
+
+
+
